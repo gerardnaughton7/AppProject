@@ -14,8 +14,13 @@ angular.module('starter.controllers', [])
   $scope.addTask = addTask;
 })
 
-.controller('WorkCtrl', function($scope) {})
+.controller('AboutCtrl', function($scope) {})
 
-.controller('PersonalCtrl', function($scope,Task) {
+.controller('TasksCtrl', function($scope,Task) {
+  
+  function deleteTask(taskName){
+      Task.deleteTask(taskName);
+  }
   $scope.data = Task.data;
+  $scope.deleteTask = deleteTask;    
 });

@@ -50,27 +50,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.work', {
-      url: '/work',
+  .state('tab.about', {
+      url: '/about',
       views: {
-        'tab-work': {
-          templateUrl: 'templates/tab-work.html',
-          controller: 'WorkCtrl'
+        'tab-about': {
+          templateUrl: 'templates/tab-about.html',
+          controller: 'AboutCtrl'
         }
       }
     })
     
-  .state('tab.personal', {
-    url: '/personal',
+  .state('tab.tasks', {
+    url: '/tasks',
     views: {
-      'tab-personal': {
-        templateUrl: 'templates/tab-personal.html',
-        controller: 'PersonalCtrl'
+      'tab-tasks': {
+        templateUrl: 'templates/tab-tasks.html',
+        controller: 'TasksCtrl'
       }
     }
-  });
+  }); 
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/addTask');
+  $urlRouterProvider.otherwise('/tab/about');
 
 });

@@ -5,19 +5,20 @@ navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
-  <!-- addTask Tab -->
+  <!-- About Tab -->
+  <ion-tab title="About" icon-off="ion-ios-information-outline" icon-on="ion-ios-information" href="#/tab/about">
+    <ion-nav-view name="tab-about"></ion-nav-view>
+  </ion-tab>
+   
+   <!-- addTask Tab -->
   <ion-tab title="Add" icon-off="ion-ios-plus-outline" icon-on="ion-ios-plus" href="#/tab/addTask">
     <ion-nav-view name="tab-addTask"></ion-nav-view>
   </ion-tab>
-
-  <!-- Work Tab -->
-  <ion-tab title="Work" icon-off="ion-ios-briefcase-outline" icon-on="ion-ios-briefcase" href="#/tab/work">
-    <ion-nav-view name="tab-work"></ion-nav-view>
-  </ion-tab>
+    
 
   <!-- Personal Tab -->
-  <ion-tab title="Personal" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/personal">
-    <ion-nav-view name="tab-personal"></ion-nav-view>
+  <ion-tab title="Tasks" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/tasks">
+    <ion-nav-view name="tab-tasks"></ion-nav-view>
   </ion-tab>
 
 
