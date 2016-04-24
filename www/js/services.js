@@ -22,7 +22,7 @@ angular.module('starter.services', [])
           }
       }
   }
-  
+  //returns the data and functions to ctrls
   return {
     data: data,
     addTask: addTask,

@@ -1,7 +1,1 @@
 /* Empty. Add your own CSS if you like */
-ion-item[toDo='true'] > div.item-content{
-        background-color: lawngreen!important;
-    }
-ion-item[toDo='false'] > div.item-content{
-        background-color: white !important;
-    }

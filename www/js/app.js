@@ -32,6 +32,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   $stateProvider
 
   // setup an abstract state for the tabs directive
+  //is the functionality at the top of each tab which controls the navigation
     .state('tab', {
     url: '/tab',
     abstract: true,
@@ -39,7 +40,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   // Each tab has its own nav history stack:
-
+  //addTask history stack
   .state('tab.addTask', {
     url: '/addTask',
     views: {
@@ -49,7 +50,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
+  
+  //about history stack
   .state('tab.about', {
       url: '/about',
       views: {
@@ -59,7 +61,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-    
+  
+  //tasks history stack
   .state('tab.tasks', {
     url: '/tasks',
     views: {
@@ -70,7 +73,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   }); 
 
-  // if none of the above states are matched, use this as the fallback
+  // if none of the above states are matched, use this as the default view
   $urlRouterProvider.otherwise('/tab/about');
 
 });
